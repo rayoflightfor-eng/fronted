@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #101bb97f;
+            color: v #000000;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #6f6f6f;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(223, 6, 6, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1> Event </h1>
+    <button id="myButton">Click Me!</button>
+    <p id="displayText">Button not clicked yet.</p>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const displayText = document.getElementById('displayText');
+
+        button.addEventListener('click', function() {
+            displayText.textContent = 'Button was clicked!';
+        });
+
+        button.addEventListener('mouseover', function() {
+            displayText.textContent = 'Button is being hovered!';
+        });
+
+        button.addEventListener('mouseout', function() {
+            displayText.textContent = 'Button not clicked yet.';
+        });
+    </script>
+    
+</body>
+</html>

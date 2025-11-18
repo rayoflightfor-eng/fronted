@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 40px;
+}
+
+.todo-input {
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin-right: 6px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+li.high { background: #ffadad; }
+li.medium { background: #ffd6a5; }
+li.low { background: #caffbf; }
+
+.task-text {
+  flex: 1;
+  transition: opacity 0.5s;
+}
+
+.completed .task-text {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
